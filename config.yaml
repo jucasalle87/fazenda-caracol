@@ -11,3 +11,10 @@ credentials:
       name: DarkPool Intermediação de Ativos
       password: $2b$12$ZUDIFEdbtAnMta7Petver.W3l8gX1BA0bstZwekqlibUw5SBbmcF2
       role: master
+    robson.cga:
+      email: ''
+      failed_login_attempts: 0
+      logged_in: false
+      name: Robson
+      password: $2b$12$cI//0RHukGSYH.DucwLRgOjhHcv6OZ/VZ7fuvyfhISGA.Vm8Hv2uG
+      role: user
