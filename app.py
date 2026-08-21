@@ -575,8 +575,7 @@ st.write(
 )
 st.write(
     "A propriedade está localizada em uma região reconhecida pela forte vocação agrícola, a apenas 70 km "
-    "de Bela Vista/MS e a 10 km da Rota Bioceânica — corredor logístico estratégico que liga o Brasil aos "
-    "portos do Pacífico, na fronteira com o Paraguai e a Bolívia, agregando valor logístico ao ativo."
+    "de Bela Vista/MS e a 10 km da Rota Bioceânica."
 )
 
 st.divider()
@@ -636,7 +635,7 @@ if os.path.exists(GEOJSON_PATH):
     ).add_to(m)
 
     st_folium(m, width=None, height=600)
-    st.caption("🟡 Perímetro geral · 🔵 Área agricultável · 🟢 Reserva Legal")
+    st.caption("🟡 Perímetro geral")
 else:
     import folium
     from streamlit_folium import st_folium
@@ -668,50 +667,6 @@ else:
     st_folium(m, width=None, height=500)
 
 st.divider()
-
-st.markdown("<div class='dp-section-label'>Localização & Diferenciais Competitivos</div>", unsafe_allow_html=True)
-st.markdown("## Caracol — Mato Grosso do Sul")
-st.write(
-    "Localização estratégica no Planalto de Caracol/MS, em região de forte vocação agrícola, com relevo "
-    "favorável à mecanização e proximidade de rotas logísticas relevantes para o escoamento da produção "
-    "e para o comércio regional com Paraguai e Bolívia."
-)
-chips = [
-    "Caracol — MS", "400 ha (280 ha agricultáveis)", "70 km de Bela Vista/MS",
-    "10 km da Rota Bioceânica", "Topografia de Planalto", "Forte Vocação Agrícola",
-]
-st.markdown("".join(f"<span class='dp-chip'>{c}</span>" for c in chips), unsafe_allow_html=True)
-
-st.markdown("<br>", unsafe_allow_html=True)
-
-# ── DESTAQUE: POTENCIAL DE EXPANSÃO + PERFIL DO INVESTIMENTO ──
-st.markdown('<div class="dp-feature">', unsafe_allow_html=True)
-st.markdown('<div class="dp-badge-feature">Destaque do Investimento</div>', unsafe_allow_html=True)
-st.markdown("<div class='dp-section-label'>Potencial de Expansão da Área Produtiva</div>", unsafe_allow_html=True)
-st.markdown("### Margem para Ampliar a Área Agricultável")
-st.write(
-    "Além dos 280 hectares já agricultáveis, a propriedade tem potencial de abertura de mais 20 hectares, "
-    "elevando a área produtiva para até 300 hectares — um ganho direto de capacidade produtiva sem "
-    "necessidade de aquisição de área adicional."
-)
-e1, e2 = st.columns(2)
-e1.metric("Área Agricultável Atual", "280 ha")
-e2.metric("Área Agricultável Potencial", "300 ha")
-
-st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("<div class='dp-section-label'>Perfil do Investimento</div>", unsafe_allow_html=True)
-st.markdown("### Ativo Estratégico para Produtores, Fundos e Investidores do Agronegócio")
-st.markdown(
-    "<div class='dp-quote'>Oportunidade de aquisição de propriedade rural em região de forte vocação "
-    "agrícola no Mato Grosso do Sul, com topografia de planalto favorável à mecanização, área "
-    "agricultável consolidada e potencial de expansão imediato — um ativo estratégico para produtores, "
-    "fundos e investidores do agronegócio, com proximidade a corredores logísticos relevantes como a "
-    "Rota Bioceânica.</div>",
-    unsafe_allow_html=True,
-)
-st.markdown("</div>", unsafe_allow_html=True)
-
-st.markdown("<br>", unsafe_allow_html=True)
 
 # ── CONTATO ──
 st.markdown(
