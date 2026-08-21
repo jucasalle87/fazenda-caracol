@@ -583,25 +583,11 @@ st.divider()
 
 st.markdown("<div class='dp-section-label'>Galeria de Fotos</div>", unsafe_allow_html=True)
 st.markdown("## Conheça a Propriedade")
-gallery = [
-    ("01.jpg", "Vista da lavoura de soja em pleno desenvolvimento — topografia de planalto"),
-    ("02.jpg", "Lavoura de soja ao entardecer, relevo plano típico da região"),
-    ("03.jpg", "Talhão em início de desenvolvimento — solo exposto entre as linhas de plantio"),
-    ("04.jpg", "Acesso interno à lavoura, junto à divisa do talhão"),
-    ("05.jpg", "Área preparada para plantio, com mata nativa preservada ao fundo"),
-    ("06.jpg", "Colheita da soja — carregamento de caminhão ao entardecer"),
-    ("07.jpg", "Veículo utilitário junto à lavoura de soja madura, estrada interna de acesso"),
-    ("08.jpg", "Colheitadeira em operação na lavoura de soja madura"),
-    ("09.jpg", "Colheita mecanizada, com vegetação nativa preservada na borda do talhão"),
-    ("10.jpg", "Solo preparado para plantio — relevo de planalto e mata nativa ao fundo"),
-    ("11.jpg", "Planta de soja com sistema radicular desenvolvido — indicador de boa fertilidade do solo"),
-    ("12.jpg", "Detalhe do sistema radicular com nódulos de fixação biológica de nitrogênio"),
-    ("13.jpg", "Detalhe da folha — qualidade e vigor do estande da lavoura"),
-]
+gallery = [f"{i:02d}.jpg" for i in range(1, 14)]
 cols = st.columns(4)
-for i, (fname, label) in enumerate(gallery):
+for i, fname in enumerate(gallery):
     with cols[i % 4]:
-        st.image(asset(fname), caption=label, width="stretch")
+        st.image(asset(fname), width="stretch")
 
 st.divider()
 
