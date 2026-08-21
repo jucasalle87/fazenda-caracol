@@ -1,0 +1,13 @@
+cookie:
+  expiry_days: 7
+  key: e1a6c47f846221a1e7fc877b0a39b4742bbfc36972bbf676
+  name: darkpool_fazenda_caracol_auth
+credentials:
+  usernames:
+    darkpool:
+      email: negocios@darkpool.com.br
+      failed_login_attempts: 0
+      logged_in: false
+      name: DarkPool Intermediação de Ativos
+      password: $2b$12$ZUDIFEdbtAnMta7Petver.W3l8gX1BA0bstZwekqlibUw5SBbmcF2
+      role: master
