@@ -150,17 +150,23 @@ Se tudo isso funcionou, está pronto.
 
 ---
 
-## Parte 6 — Quando o KML da fazenda chegar
+## Parte 6 — Mapa com o perímetro real (já pronto)
 
-1. Converta o KML/KMZ para GeoJSON (ex.: em [geojson.io](https://geojson.io),
-   arrastando o arquivo e exportando como GeoJSON, ou com a ferramenta
-   `kml2geojson`).
+O KML da fazenda já foi recebido e convertido — o arquivo
+`data/fazenda_caracol.geojson` já vem incluído nesta pasta, com o contorno
+real da propriedade (área do polígono: 396,33 ha). Ao subir os arquivos na
+Parte 2, ele vai junto com o resto da pasta `data/`, e a seção "Mapa da
+Propriedade" do app já aparece com o perímetro sobre imagem de satélite,
+sem precisar de nenhum passo extra.
+
+Se um dia precisar trocar por um KML atualizado (ex.: perímetro revisado):
+1. Converta o novo KML/KMZ para GeoJSON (ex.: em [geojson.io](https://geojson.io),
+   arrastando o arquivo e exportando como GeoJSON).
 2. No repositório do GitHub, entre na pasta `data`, clique em **Add file
-   > Upload files** e suba o arquivo salvando com o nome exato
-   `fazenda_caracol.geojson`.
-3. Commit. O Streamlit Cloud detecta a mudança e, em segundos, a seção
-   "Mapa" do app passa a mostrar o contorno real da fazenda sobre imagem
-   de satélite — sem precisar mexer em mais nada.
+   > Upload files** e suba o arquivo salvando com o mesmo nome
+   `fazenda_caracol.geojson` (substitui o anterior).
+3. Commit. O Streamlit Cloud detecta a mudança e atualiza o mapa em
+   segundos.
 
 ---
 

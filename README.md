@@ -23,20 +23,13 @@ vale trocar antes de dar acesso a qualquer pessoa de fora).
   de mais 20 ha), topografia de planalto, região de forte vocação agrícola,
   município de Caracol/MS, distância de Bela Vista (70 km) e da Rota
   Bioceânica (10 km), e valor (R$ 22.000.000,00).
+- **Mapa com o perímetro real da propriedade** (`data/fazenda_caracol.geojson`),
+  convertido do KML enviado (área do polígono: 396,33 ha, batendo com os
+  ~400 ha do resumo). Aparece sobre imagem de satélite na seção "Mapa da
+  Propriedade" do dataroom.
 
-## 3. O que falta completar
+## 3. O que falta completar (opcional)
 
-- **Mapa da propriedade**: por enquanto a seção "Mapa" mostra apenas a
-  localização aproximada do município de Caracol/MS, com um aviso de que o
-  perímetro exato ainda não foi recebido. Assim que o **arquivo KML/KMZ**
-  da fazenda for enviado:
-  1. Converta o KML para GeoJSON (ex.: [kml2geojson](https://github.com/mrcagney/kml2geojson),
-     ou abrindo o KML no [geojson.io](https://geojson.io) e exportando).
-  2. Salve o resultado como `data/fazenda_caracol.geojson` (mesma pasta
-     deste README).
-  3. Pronto — o app detecta o arquivo automaticamente e passa a exibir o
-     mapa com o perímetro real da fazenda sobre imagem de satélite, sem
-     precisar alterar nenhuma linha de código.
 - **Vídeos** (se houver): pode-se adicionar uma seção de vídeos do YouTube
   seguindo o mesmo padrão dos outros portais DarkPool, quando o material
   estiver disponível.
@@ -125,5 +118,5 @@ assets/
   01.jpg ... 13.jpg           # fotos da fazenda
 data/
   access_log.csv              # cópia local do log de acessos (espelha o GitHub)
-  fazenda_caracol.geojson     # (a adicionar) perímetro da fazenda, convertido do KML
+  fazenda_caracol.geojson     # perímetro da fazenda, convertido do KML
 ```
